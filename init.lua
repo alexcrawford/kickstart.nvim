@@ -695,8 +695,6 @@ require('lazy').setup({
           },
         },
         eslint = {},
-        --
-
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -711,6 +709,7 @@ require('lazy').setup({
             },
           },
         },
+        intelephense = {},
       }
 
       -- Ensure the servers and tools above are installed
