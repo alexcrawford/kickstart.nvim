@@ -12,9 +12,7 @@ return {
   --   "BufNewFile path/to/my-vault/*.md",
   -- },
   dependencies = {
-    -- Required.
     'nvim-lua/plenary.nvim',
-    -- see below for full list of optional dependencies 👇
   },
   opts = {
     workspaces = {
@@ -23,7 +21,14 @@ return {
         path = '~/Notes/personal',
       },
     },
-
-    -- see below for full list of options 👇
+  },
+  keys = {
+    { '<leader>ox', '<cmd>ObsidianExtractNote<CR>', desc = '[O]bsidian E[x]tract', mode = 'v' },
+    { '<leader>ol', '<cmd>ObsidianLink<CR>', desc = '[O]bsidian [L]ink', mode = 'v' },
+    { '<leader>ot', '<cmd>ObsidianToday<CR>', desc = '[O]bsidian [T]oday' },
+    { '<leader>ob', '<cmd>ObsidianBacklinks<CR>', desc = '[O]bsidian [B]acklinks' },
+    { '<leader>of', '<cmd>ObsidianFollowLink<CR>', desc = '[O]bsidian [F]ollow Link' },
+    { '<leader>on', '<cmd>ObsidianNew<CR>', desc = '[O]bsidian [N]ew' },
+    { '<leader>oo', '<cmd>ObsidianOpen<CR>', desc = '[O]bsidian [O]pen' },
   },
 }
