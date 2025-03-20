@@ -4,9 +4,10 @@ return {
     lazy = false,
     keys = {
       -- Will use Telescope if installed or a vim.ui.select picker otherwise
-      { '<leader>wr', '<cmd>SessionSearch<CR>', desc = 'Session search' },
-      { '<leader>ws', '<cmd>SessionSave<CR>', desc = 'Save session' },
-      { '<leader>wa', '<cmd>SessionToggleAutoSave<CR>', desc = 'Toggle autosave' },
+      { '<leader>wf', '<cmd>SessionSearch<CR>', desc = 'Session Search ([F]ind)' },
+      { '<leader>ws', '<cmd>SessionSave<CR>', desc = '[S]ave Session' },
+      { '<leader>wa', '<cmd>SessionToggleAutoSave<CR>', desc = 'Toggle [A]utosave' },
+      { '<leader>wd', '<cmd>SessionDelete<CR>', desc = '[D]elete Session' },
     },
 
     ---enables autocomplete for opts
