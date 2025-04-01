@@ -21,6 +21,12 @@ return {
         path = '~/Notes/personal',
       },
     },
+    daily_notes = {
+      template = 'daily.md',
+    },
+    templates = {
+      folder = 'templates',
+    },
   },
   keys = {
     { '<leader>ox', '<cmd>ObsidianExtractNote<CR>', desc = '[O]bsidian E[x]tract', mode = 'v' },
