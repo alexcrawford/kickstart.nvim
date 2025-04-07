@@ -142,19 +142,19 @@ require('lazy').setup({
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   -- Import all plugins from lua/plugins
-  require('plugins.trouble'),
-  require('plugins.tailwind-tools'),
-  require('plugins.harpoon'),
-  require('plugins.which-key'),
-  require('plugins.telescope'),
-  require('plugins.lsp'),
-  require('plugins.conform'),
-  require('plugins.cmp'),
-  require('plugins.onedarkpro'),
-  require('plugins.todo-comments'),
-  require('plugins.mini'),
-  require('plugins.treesitter'),
-  require('plugins.nvim-surround'),
+  require 'plugins.trouble',
+  require 'plugins.tailwind-tools',
+  require 'plugins.harpoon',
+  require 'plugins.which-key',
+  require 'plugins.telescope',
+  require 'plugins.lsp',
+  require 'plugins.conform',
+  require 'plugins.cmp',
+  require 'plugins.onedarkpro',
+  require 'plugins.todo-comments',
+  require 'plugins.mini',
+  require 'plugins.treesitter',
+  require 'plugins.nvim-surround',
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
@@ -172,10 +172,11 @@ require('lazy').setup({
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'plugins.oil',
-  require('plugins.obsidian'),
-  require('plugins.session'),
-  require('plugins.remote-sshfs'),
-  require('plugins.refactoring'),
+  require 'plugins.obsidian',
+  require 'plugins.session',
+  require 'plugins.remote-sshfs',
+  require 'plugins.refactoring',
+  require 'plugins.rest',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
