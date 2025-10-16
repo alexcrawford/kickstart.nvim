@@ -18,6 +18,11 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.opt.tabstop = 4 -- Number of visual spaces per tab
+vim.opt.shiftwidth = 4 -- Spaces for autoindent
+vim.opt.softtabstop = 4 -- Spaces when pressing Tab
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
@@ -138,7 +143,6 @@ vim.opt.rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
-  'github/copilot.vim',
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   -- Import all plugins from lua/plugins
@@ -150,7 +154,7 @@ require('lazy').setup({
   require 'plugins.lsp',
   require 'plugins.conform',
   require 'plugins.cmp',
-  require 'plugins.onedarkpro',
+  require 'plugins.catppuccin',
   require 'plugins.todo-comments',
   require 'plugins.mini',
   require 'plugins.treesitter',
@@ -172,12 +176,10 @@ require('lazy').setup({
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'plugins.oil',
-  require 'plugins.obsidian',
   require 'plugins.session',
   require 'plugins.remote-sshfs',
   require 'plugins.refactoring',
   require 'plugins.rest',
-  require 'plugins.aider',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
